@@ -1,11 +1,12 @@
 import gallery from './gallery-items.js';
 
-// Добавляю разметку в HTML
 const galleryPicRef = document.querySelector('.js-gallery');
 const lightboxRef = document.querySelector('.js-lightbox');
 const lightboxElementRef = document.querySelector('.lightbox__image');
 const closeModalBtnRef = document.querySelector('.lightbox__button');
 const overlayModal = document.querySelector('.lightbox__overlay');
+
+// Добавляю разметку в HTML
 
 const galleryMarkup = galleryCreate();
 galleryPicRef.insertAdjacentHTML('beforeend', galleryMarkup);
@@ -30,7 +31,7 @@ function galleryCreate() {
 
   return markup;
 }
-//z-index бля будущего пролистывание изображений галереи 
+//z-index для будущего пролистывание изображений галереи 
 
 //Ссылка на большое изображения
 
